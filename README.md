@@ -65,75 +65,36 @@ Dine Craft is a full-stack Restaurant Management website designed to enhance the
 
 ---
 
-## Packages Used
+## Tech Stack Used
 
 ### Client-Side
+- React
+- React Router
+- Tailwind CSS
+- Material UI
+- DaisyUI
+- GSAP
+- Framer Motion
+- React Hook Form
+- Firebase Authentication
+- Lottie Files
+- React Toastify
+- Swiper
+- React Scroll
+- Lightbox Gallery
 
-- **Core Libraries**
-  - `react`: ^18.2.0
-  - `react-dom`: ^18.2.0
-  - `react-router-dom`: ^6.23.0
-
-- **UI and Styling**
-  - `@emotion/react`: ^11.14.0
-  - `@emotion/styled`: ^11.14.0
-  - `@mui/icons-material`: ^6.3.0
-  - `@mui/material`: ^6.3.0
-  - `@material-tailwind/react`: ^2.1.10
-  - `tailwindcss`: ^3.4.17
-  - `daisyui`: ^4.12.22
-
-- **Animations**
-  - `gsap`: ^3.12.5
-  - `framer-motion`: (optional implementation suggested in guidelines)
-
-- **Lightbox and Gallery**
-  - `fslightbox-react`: ^1.7.6
-  - `yet-another-react-lightbox`: ^3.21.7
-
-- **Forms and Validation**
-  - `react-hook-form`: ^7.54.2
-  - `react-datepicker`: ^6.9.0
-
-- **State Management and Notifications**
-  - `react-hot-toast`: ^2.4.1
-  - `react-toastify`: ^11.0.2
-
-- **Other Utilities**
-  - `swiper`: ^11.1.1
-  - `react-scroll`: ^1.9.0
-  - `@lottiefiles/dotlottie-react`: ^0.12.0
-  - `@lottiefiles/react-lottie-player`: ^3.5.4
-
-### Server-Side and Security
-
-- **Backend Framework**
-  - `express`: (add specific version used)
-
-- **Database**
-  - `mongodb`: (add specific version used)
-
-- **Authentication**
-  - `jsonwebtoken`: (for JWT implementation)
-  - `firebase`: ^11.1.0
-
-- **Environment Management**
-  - `dotenv`: (add specific version used)
+### Server-Side & Security
+- Express.js
+- MongoDB
+- JSON Web Token (JWT)
+- Firebase Authentication
+- Dotenv
 
 ### Development Tools
-
-- **Bundling and Build Tools**
-  - `vite`: ^5.2.0
-  - `@vitejs/plugin-react`: ^4.2.1
-
-- **Linting and Code Quality**
-  - `eslint`: ^8.57.0
-  - `eslint-plugin-react`: ^7.34.1
-  - `eslint-plugin-react-hooks`: ^4.6.0
-
-- **CSS Utilities**
-  - `autoprefixer`: ^10.4.20
-  - `postcss`: ^8.4.49
+- Vite
+- ESLint
+- PostCSS
+- Autoprefixer
 
 ---
 
@@ -149,4 +110,4 @@ Dine Craft is a full-stack Restaurant Management website designed to enhance the
 - Secure Firebase and MongoDB credentials using environment variables.
 - Ensure JWT tokens are implemented and verified for all private routes.
 - Handle edge cases such as unavailable food quantities during purchase.
-- Test all features thoroughly to ensure seamless user experience.
+- Test all features thoroughly to ensure a seamless user experience.
