@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider>
     <AuthProvider>
      
-     <RouterProvider router={router} />
+     <RouterProvider  router={router} />
      <Toaster position='top-right' reverseOrder={false} />
   
  </AuthProvider>

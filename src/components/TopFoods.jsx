@@ -37,22 +37,22 @@ const TopFoods = () => {
         {topFoods.map((food) => (
           <Card
             key={food._id}
-            className="w-full max-w-xs shadow-lg border rounded-lg border-gray-500 bg-[#0F1D22] hover:shadow-2xl transform hover:scale-105 transition-transform duration-300"
+            className="w-full  max-w-xs shadow-lg border rounded-lg border-gray-500 bg-green-100 hover:shadow-2xl transform hover:scale-105 transition-transform duration-300"
           >
             <CardHeader shadow={false} floated={false} className="h-48">
-              <img src={food.image} alt={food.name} className="h-full w-full object-cover" />
+              <img src={food.image} alt={food.name} className="h-full w-full bg-slate-100 object-cover" />
             </CardHeader>
             <CardBody>
-              <Typography color="white" className="font-bold text-lg mb-2">
+              <Typography color="white" className="font-bold text-orange-400 text-lg mb-2">
                 {food.name}
               </Typography>
-              <Typography color="white" className="text-sm mb-1">
+              <Typography color="white" className="text-sm text-orange-400  mb-1">
                 Category: {food.category}
               </Typography>
-              <Typography color="white" className="text-sm mb-1">
+              <Typography color="white" className="text-sm text-orange-400 mb-1">
                 Price: ${food.price}
               </Typography>
-              <Typography color="white" className="text-sm mb-3">
+              <Typography color="white" className="text-sm text-orange-400 mb-3">
                 Purchased: {food.total_sold} times
               </Typography>
             </CardBody>
@@ -60,7 +60,7 @@ const TopFoods = () => {
               <Button
                 ripple={false}
                 fullWidth={true}
-                className=" text-green-600 bg-lime-950 hover:scale-105 transition-transform"
+                className=" text-orange-500 bg-white hover:scale-105 transition-transform"
                 onClick={() => navigate(`/food-details/${food._id}`)}
               >
                 Details
@@ -73,7 +73,7 @@ const TopFoods = () => {
       <div className="text-center mt-8">
         <Button
           ripple={false}
-          className="bg-orange-700 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-transform"
+          className="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-blue-300 transition-transform"
           onClick={() => navigate('/all-foods')}
         >
           See All
