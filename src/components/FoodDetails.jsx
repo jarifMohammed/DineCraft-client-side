@@ -41,7 +41,7 @@ const FoodDetails = () => {
   return (
     <div className="container mx-auto b m-20 p-8">
       {Object.keys(food).length > 0 ? (
-        <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="max-w-4xl mx-auto bg-sky-100 rounded-lg shadow-lg overflow-hidden">
           <div className="flex justify-center pt-8">
             <img
               src={image}
