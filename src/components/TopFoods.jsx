@@ -36,37 +36,38 @@ const TopFoods = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {topFoods.map((food) => (
           <Card
-            key={food._id}
-            className="w-full  max-w-xs shadow-lg border rounded-lg border-gray-500 bg-green-100 hover:shadow-2xl transform hover:scale-105 transition-transform duration-300"
-          >
-            <CardHeader shadow={false} floated={false} className="h-48">
-              <img src={food.image} alt={food.name} className="h-full w-full bg-slate-100 object-cover" />
-            </CardHeader>
-            <CardBody>
-              <Typography color="white" className="font-bold text-orange-400 text-lg mb-2">
-                {food.name}
-              </Typography>
-              <Typography color="white" className="text-sm text-orange-400  mb-1">
-                Category: {food.category}
-              </Typography>
-              <Typography color="white" className="text-sm text-orange-400 mb-1">
-                Price: ${food.price}
-              </Typography>
-              <Typography color="white" className="text-sm text-orange-400 mb-3">
-                Purchased: {food.total_sold} times
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Button
-                ripple={false}
-                fullWidth={true}
-                className=" text-orange-500 bg-white hover:scale-105 transition-transform"
-                onClick={() => navigate(`/food-details/${food._id}`)}
-              >
-                Details
-              </Button>
-            </CardFooter>
-          </Card>
+          key={food._id}
+          className="w-full max-w-xs shadow-xl border rounded-lg border-gray-400 bg-gradient-to-br from-green-200 to-green-50 hover:shadow-2xl transform hover:scale-105 transition-transform duration-300"
+        >
+          <CardHeader shadow={false} floated={false} className="h-48">
+            <img src={food.image} alt={food.name} className="h-full w-full bg-slate-100 object-cover rounded-t-lg" />
+          </CardHeader>
+          <CardBody className="flex flex-col gap-2 items-center my-5">
+            <Typography className="font-extrabold text-xl text-green-800 tracking-wide">
+              {food.name}
+            </Typography>
+            <Typography className="text-lg text-gray-700 font-semibold">
+              {food.category}
+            </Typography>
+            <Typography className="text-xl font-bold text-orange-600">
+              ${food.price}
+            </Typography>
+            <Typography className="text-base text-gray-600 italic">
+              Sold {food.total_sold} times
+            </Typography>
+          </CardBody>
+          <CardFooter className="pt-0">
+            <Button
+              ripple={false}
+              fullWidth={true}
+              className="text-white bg-orange-500 font-semibold py-2 rounded-lg hover:bg-orange-600 transition-all duration-300"
+              onClick={() => navigate(`/food-details/${food._id}`)}
+            >
+              View Details
+            </Button>
+          </CardFooter>
+        </Card>
+        
         ))}
       </div>
       {/* "See All" Button */}
